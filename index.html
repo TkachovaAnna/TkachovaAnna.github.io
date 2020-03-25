@@ -96,7 +96,6 @@
       }
       #section-contact:before {
         content: "";
-        display: block;
         position: absolute;
         width: 100%;
         height: calc(100% - 500px);
@@ -113,6 +112,8 @@
       .brand {
         position: absolute;
         top: 50px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
         transform: translateY(-50%);
       }
       .text-wrapper {
@@ -135,6 +136,10 @@
       .video-wrapper {
         height: 400px;
       }
+      .row:before,
+      .row:before {
+        display: block;
+      }
       @media (min-width: 992px) {
         #section-contact {
           min-height: 850px;
@@ -146,10 +151,13 @@
           width: 50%;
           height: 150%;
           top: 50%;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
           transform: translateY(-50%);
         }
         .row-cols-lg-8 > * {
           -ms-flex: 0 0 12.5%;
+          -webkit-box-flex: 0;
           flex: 0 0 12.5%;
           max-width: 12.5%;
           top: 50%;
